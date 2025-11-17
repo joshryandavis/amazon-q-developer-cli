@@ -1,0 +1,35 @@
+[package]
+name = "langchain-q-developer"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[dependencies]
+# LangChain Rust
+langchain-rust = "4.6.0"
+
+# Async runtime
+tokio = { workspace = true }
+tokio-stream = { workspace = true }
+
+# Error handling
+thiserror = { workspace = true }
+eyre = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
+
+# Internal dependencies - use chat-cli for API access
+chat_cli = { path = "../chat-cli" }
+async-trait = { workspace = true }
+futures = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["full", "test-util"] }

@@ -1,0 +1,10 @@
+[project]
+name = "q-developer-langchain"
+version = "0.1.0"
+description = "LangChain integration for Amazon Q Developer"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "langchain>=0.1.0",
+    "langchain-core>=0.1.0",
+]
